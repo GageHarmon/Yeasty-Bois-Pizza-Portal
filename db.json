@@ -2,14 +2,105 @@
 {
 "pizza" : [
 
-{
     {
-        "name" : "",
-        "image" : "",
-        "Location" : "",
-        "website" : "",
-        "best-feature" : ""
+        "name" : "Fat Sully's",
+        "image" : "https://images.app.goo.gl/gm6P8my8rNJpXhgQ7",
+        "Location" : "141 S Broadway, Denver, CO 80209",
+        "website" : "https://www.fatsullys.com/",
+        "best-feature": "GIANT slices",
+        "likes": "",
+        "comment" : ""
     },
 
+    {
+        "name" : "Famous Original J's",
+        "image" : "https://images.app.goo.gl/ncUFRq94NKJs1Lbw9",
+        "Location" : "715 E 26th Ave, Denver, CO 80205",
+        "website" : "https://famousoriginaljs.com/",
+        "best-feature" : "Authentic NY stlye",
+        "likes": "",
+        "comment" : ""
+    },
 
+    {
+        "name" : "Cart Driver",
+        "image" : "https://images.app.goo.gl/9v8RHDXK7qrM2Jpe6",
+        "Location" : "2239 West 30th Ave, Denver, CO 80211",
+        "website" : "https://www.cart-driver.com/",
+        "best-feature" : "Unique pizza toppings",
+        "likes": "",
+        "comment" : ""
+    },
+
+    {
+        "name" : "Sexy Pizza",
+        "image" : "https://images.app.goo.gl/9v8RHDXK7qrM2Jpe6",
+        "Location" : "2460 Eliot St, Denver, CO 80211",
+        "website" : "https://sexy.pizza/",
+        "best-feature" : "Great personality",
+        "likes": "",
+        "comment" : ""
+    },
+
+    {
+        "name" : "Grabowski's",
+        "image" : "https://images.app.goo.gl/MvVegrgQ2t1TFccM6",
+        "Location" : "3350 Brighton Blvd, Denver, CO 80216",
+        "website" : "https://www.grabowskispizzeria.com/",
+        "best-feature" : "Chicago 'cracker-stlye' pizza",
+        "likes": "",
+        "comment" : ""
+    },
+
+    {
+        "name" : "Rosalee's",
+        "image" : "https://images.app.goo.gl/hYqQrvkBfVUXpHdP9",
+        "Location" : "461 Main St, Longmont, CO 80501",
+        "website" : "http://rosaleespizzeria.com/",
+        "best-feature" : "Mushroom White Pie",
+        "likes": "",
+        "comment" : ""
+    },
+
+    {
+        "name" : "Blue Pan",
+        "image" : "https://images.app.goo.gl/seznax3jGinLg9rXA",
+        "Location" : "3934 W 32nd Ave, Denver, CO 80212",
+        "website" : "https://bluepandenver.com/",
+        "best-feature" : "Detroit Stlye Pizza",
+        "likes": "",
+        "comment" : ""
+    },
+
+    {
+        "name" : "Redeemer",
+        "image" : "https://images.app.goo.gl/tqbGeBszS4aSqUor6",
+        "Location" : "2705 Larimer St, Denver, CO 80205",
+        "website" : "https://www.redeemerpizza.com/",
+        "best-feature" : "Hip vibes",
+        "likes": "",
+        "comment" : ""
+    },
+
+    {
+        "name" : "Audrey Jane's Pizza Garage",
+        "image" : "https://images.app.goo.gl/EBUFmJc1vV6V4Kg2A",
+        "Location" : "2675 13th St, Boulder, CO 80304",
+        "website" : "https://www.thepizzagarage.com/",
+        "best-feature" : "Featured on Diners, Drive-Ins, and Dives",
+        "likes": "",
+        "comment" : ""
+    },
+
+    {
+        "name" : "Dominos",
+        "image" : "https://images.app.goo.gl/EBUFmJc1vV6V4Kg2A",
+        "Location" : "Everywhere",
+        "website" : "https://www.dominos.com/en/",
+        "best-feature" : "Best for when you don't give a crap",
+        "likes": "",
+        "comment" : ""
+    }
+
+        ]
 }
