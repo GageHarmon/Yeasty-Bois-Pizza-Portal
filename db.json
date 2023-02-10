@@ -1,15 +1,12 @@
-
 {
-"pizza" : [
-
-{
-    {
-        "name" : "",
-        "image" : "",
-        "Location" : "",
-        "website" : "",
-        "best-feature" : ""
-    },
-
-
-}
+    "pizza": [
+        {
+            {
+                "name": "",
+                "image": "",
+                "Location": "",
+                "website": "",
+                "best-feature": ""
+            },
+        }
+    }

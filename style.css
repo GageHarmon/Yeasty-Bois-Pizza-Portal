@@ -1,0 +1,82 @@
+body {
+    padding: 25px;
+    background-color: rgb(237, 222, 222);
+    font-size: 0.9vw;
+}
+
+body.dark-mode {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+}
+
+.title {
+    position: absolute;
+    padding-top: 75px;
+    text-align: center;
+    font-family: 'Get Schwifty';
+    font-size: 7em;
+    color: #FF4500;
+    z-index: 50;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.title.middle {
+    -webkit-text-stroke: 0.1em #FFD700;
+    z-index: 49;
+}
+
+.title.bottom {
+    -webkit-text-stroke: 0.4em black;
+    z-index: 48;
+}
+
+.portal {
+    background-color: #66BA4F;
+    box-shadow: 0px 0px 40px 10px #8B0000;
+    height: 25em;
+    width: 25em;
+    border-radius: 50%;
+    margin: auto;
+    background:
+        radial-gradient(circle at 77% 80%, #FDFEB4 2.5%, transparent 2.5%),
+        radial-gradient(circle at 75% 83%, #FDFEB4 2%, transparent 2%),
+        radial-gradient(circle at 79% 83%, #FDFEB4 1%, transparent 1%),
+        radial-gradient(circle at 45% 13%, #FFFFD5 1.5%, transparent 1.5%),
+        radial-gradient(circle at 42% 13%, #FFFFD5 2%, transparent 2%),
+        radial-gradient(circle at 38% 14%, #FFFFD5 1.5%, transparent 1.5%),
+        radial-gradient(circle at 20% 24%, #FDFEB4 1%, transparent 1%),
+        radial-gradient(circle at 21% 23%, #FDFEB4 1%, transparent 1%),
+        radial-gradient(circle at 51% 13%, #FDFEB4 1%, transparent 1%),
+        radial-gradient(circle at 81% 33%, #FDFEB4 1%, transparent 1%),
+        radial-gradient(circle at 85% 36%, #FDFEB4 2%, transparent 2%),
+        radial-gradient(circle at 21% 46%, #FDFEB4 1%, transparent 1%),
+        radial-gradient(circle at 20% 51%, #FDFEB4 2%, transparent 2%),
+        radial-gradient(circle at 53% 51%, transparent 64%, #B22222 64%),
+        radial-gradient(circle at 47% 59%, transparent 64%, #FFA500 64%),
+        radial-gradient(circle at 47% 60%, transparent 59%, #FF4500 59%),
+        radial-gradient(circle at 50% 59%, transparent 55%, #FFA500 55%),
+        radial-gradient(circle at 45% 60%, transparent 55%, #B22222 55%),
+        radial-gradient(circle at 47% 60%, transparent 46%, #FF4500 46%),
+        radial-gradient(circle at 46% 55%, transparent 43%, #FFA500 43%),
+        radial-gradient(circle at 36% 55%, transparent 43%, #FFD700 43%),
+        radial-gradient(circle at 50% 60%, transparent 40%, #FFD700 40%),
+        radial-gradient(circle at 50% 53%, transparent 40%, #B22222 37%),
+        radial-gradient(circle at 30% 48%, transparent 40%, #B22222 37%),
+        radial-gradient(circle at 57% 69%, transparent 40%, #B22222 40%),
+        radial-gradient(circle at 40% 88%, transparent 40%, #FFA500 37%),
+        radial-gradient(circle at 67% 54%, transparent 40%, #DAA520 37%),
+        radial-gradient(circle at 49% 35%, transparent 40%, #FFF8C5 37%),
+        radial-gradient(circle at 79% 59%, transparent 40%, #FFFE9C 37%),
+        radial-gradient(circle at 50% 50%, #FDFEB4 100%, #FDFEB4 100%);
+}
+
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
