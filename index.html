@@ -9,27 +9,36 @@
 </head>
 
 <body>
-    <button type="button" id="toggle-dark-mode">Toggle Dark Mode
-    </button>
+    <div class="switch">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
     <div id="pizza-nav">
     </div>
     <div id="pizza-display">
-        <h2 id="pizza-name">Title of image goes here</h2>
-        <img id="pizza-image" src="#" alt="name of image">
-        <!-- <p class="best-feature">Pizza on a couch! Just look at it!</p> -->
-        <div class="likes-section">
+        <div id="card-body">
+            <h2 id="pizza-name">Title of image goes here</h2>
+            <br>
+            <img id="pizza-image" src="#" alt="name of image">
+            <br>
+            <p class="best-feature">Best feature!</p>
+            <br>
+            <a href="website-url"> Visit Us!</a>
+            <br>
+            <!-- <p class="best-feature">Pizza on a couch! Just look at it!</p> -->
             <span id="like-count" class="likes">0 likes</span>
             <button id="like-button" class="like-button">♥</button>
         </div>
     </div>
-    <!-- <button id="toggle-dark-mode">Toggle Dark Mode</button> -->
     <div class="container">
-        <!-- <div class="animate-spin"> -->
-        <div class="portal"></div>
-    </div>
-    <div class="title">Yeasty Bois</div>
-    <div class="title middle">Yeasty Bois</div>
-    <div class="title bottom">Yeasty Bois</div>
+        <div class="animate-spin">
+            <div class="portal"></div>
+        </div>
+        <div class="title">Yeasty Bois</div>
+        <div class="title middle">Yeasty Bois</div>
+        <div class="title bottom">Yeasty Bois</div>
     </div>
     <!-- <form id="pizza-review-form">
         <label for="pizza-review-input">Leave a review!</label>

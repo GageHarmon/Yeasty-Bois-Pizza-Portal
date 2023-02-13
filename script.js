@@ -32,17 +32,19 @@ function createImage(pizzaData) {
     let image = document.querySelector("#pizza-image");
     let name = document.querySelector("#pizza-name");
     let likes = document.querySelector("#like-count");
+    let bestFeature = document.querySelector(".best-feature");
 
     image.src = selectedPizza.image;
     name.textContent = selectedPizza.name;
     likes.textContent = selectedPizza.likes;
+    bestFeature.textContent = selectedPizza.feature;
 }
 
 
 
 
 ///// DARK MODE /////
-let toggleButton = document.getElementById("toggle-dark-mode");
+let toggleButton = document.querySelector("#checkbox");
 
 toggleButton.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
@@ -58,8 +60,9 @@ function handleLike() {
     likeButton.addEventListener('click', () => {
         if (selectedPizza.likes < 2000) {
             selectedPizza.likes++;
-            likeButton.textContent = selectedPizza.likes;
+            likeButton.textContent = pizza.likes;
         }
     })
 }
+
 
