@@ -2,24 +2,39 @@
 <html lang="en">
 
 <head>
+    <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Yeasty Bois Pizza Rater</title>
     <script src="script.js" defer></script>
+    <title>Yeasty Bois Pizza Rater</title>
 </head>
 
 <body>
-    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button type="button" id="toggle-dark-mode">Toggle Dark Mode
+    </button>
+    <div id="pizza-nav">
+    </div>
+    <div id="pizza-display">
+        <h2 id="pizza-name">Title of image goes here</h2>
+        <img id="pizza-image" src="#" alt="name of image">
+        <!-- <p class="best-feature">Pizza on a couch! Just look at it!</p> -->
+        <div class="likes-section">
+            <span id="like-count" class="likes">0 likes</span>
+            <button id="like-button" class="like-button">♥</button>
+        </div>
+    </div>
     <!-- <button id="toggle-dark-mode">Toggle Dark Mode</button> -->
     <div class="container">
+        <!-- <div class="animate-spin"> -->
         <div class="portal"></div>
-        <div class="title">Yeasty Bois</div>
-        <div class="title middle">Yeasty Bois</div>
-        <div class="title bottom">Yeasty Bois</div>
     </div>
-    <form id="pizza-review-form">
+    <div class="title">Yeasty Bois</div>
+    <div class="title middle">Yeasty Bois</div>
+    <div class="title bottom">Yeasty Bois</div>
+    </div>
+    <!-- <form id="pizza-review-form">
         <label for="pizza-review-input">Leave a review!</label>
         <input type="text" name="pizza-review-input">
-    </form>
+    </form> -->
 </body>
 
 </html>
