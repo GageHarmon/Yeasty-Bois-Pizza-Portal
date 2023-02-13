@@ -1,4 +1,5 @@
 body {
+    text-align: center;
     padding: 25px;
     background-color: rgb(237, 222, 222);
     font-size: 0.9vw;
@@ -9,10 +10,43 @@ body.dark-mode {
     color: white;
 }
 
+#pizza-nav {
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    width: 100%;
+}
+
+#pizza-nav img {
+    width: 125px;
+    border: solid black 2px;
+    margin: 0.3em;
+    border-radius: 0.5em;
+}
+
+#pizza-display img {
+    height: 15vh;
+    border: solid black 3px;
+    border-radius: 3em;
+}
+
+
+/* #pizza-display button {
+    background: pink;
+    border: solid black 1px;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    padding: 0.75em;
+    font-weight: bold;
+} */
+
 .container {
     height: 100vh;
     display: grid;
 }
+
 
 .title {
     position: absolute;
@@ -37,10 +71,11 @@ body.dark-mode {
 }
 
 .portal {
+    position: absolute;
     background-color: #66BA4F;
     box-shadow: 0px 0px 40px 10px #8B0000;
-    height: 25em;
-    width: 25em;
+    height: 45em;
+    width: 45em;
     border-radius: 50%;
     margin: auto;
     background:
@@ -79,4 +114,12 @@ body.dark-mode {
 @font-face {
     font-family: 'Get Schwifty';
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
+
+form {
+    margin: 2em;
+}
+
+form label {
+    display: block;
 }
