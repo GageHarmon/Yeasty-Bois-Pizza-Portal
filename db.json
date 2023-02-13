@@ -1,104 +1,93 @@
 {
-"pizza" : [
-
-    {
-        "name" : "Fat Sully's",
-        "image" : "./Images/fat_sullys_logo.png",
-        "Location" : "141 S Broadway, Denver, CO 80209",
-        "website" : "https://www.fatsullys.com/",
-        "best-feature": "GIANT slices",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Famous Original J's",
-        "image" : "./Images/famous_js_logo.png",
-        "Location" : "715 E 26th Ave, Denver, CO 80205",
-        "website" : "https://famousoriginaljs.com/",
-        "best-feature" : "Authentic NY stlye",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Ian's Pizza",
-        "image" : "./Images/ians_pizza_logo.png",
-        "website" : "https://ianspizza.com/",
-        "best-feature" : "It is next door",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Sexy Pizza",
-        "image" : "./Images/sexy_pizza.jpeg",
-        "Location" : "2460 Eliot St, Denver, CO 80211",
-        "website" : "https://sexy.pizza/",
-        "best-feature" : "Great personality",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Hops and Pie",
-        "image" : "./Images/hops_and_pie.jpeg",
-        "Location" : "3920 Tennyson St, Denver, CO 80212",
-        "website" : "https://www.hopsandpie.com/",
-        "best-feature" : "Sourdough pizza and great beer selection",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Rosalee's",
-        "image" : "./Images/Rosalees_pizza.png",
-        "Location" : "461 Main St, Longmont, CO 80501",
-        "website" : "http://rosaleespizzeria.com/",
-        "best-feature" : "Mushroom White Pie",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Blue Pan",
-        "image" : "./Images/blue_pan.jpeg",
-        "Location" : "3934 W 32nd Ave, Denver, CO 80212",
-        "website" : "https://bluepandenver.com/",
-        "best-feature" : "Detroit Stlye Pizza",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Redeemer",
-        "image" : "./Images/redeemer.pizza.png",
-        "Location" : "2705 Larimer St, Denver, CO 80205",
-        "website" : "https://www.redeemerpizza.com/",
-        "best-feature" : "Hip vibes",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Audrey Jane's Pizza Garage",
-        "image" : "./Images/audrey_janes_pizza.png",
-        "Location" : "2675 13th St, Boulder, CO 80304",
-        "website" : "https://www.thepizzagarage.com/",
-        "best-feature" : "Featured on Diners, Drive-Ins, and Dives",
-        "likes": "",
-        "comment" : ""
-    },
-
-    {
-        "name" : "Dominos",
-        "image" : "./Images/dominos_pizza.png",
-        "Location" : "Everywhere",
-        "website" : "https://www.dominos.com/en/",
-        "best-feature" : "Best for when you don't give a crap",
-        "likes": "",
-        "comment" : ""
-    }
-
-        ]
+    "pizza": [
+        {
+            "name": "Fat Sully's",
+            "image": "./Images/fat_sullys_logo.png",
+            "Location": "141 S Broadway, Denver, CO 80209",
+            "website": "https://www.fatsullys.com/",
+            "feature": "GIANT slices",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Famous Original J's",
+            "image": "./Images/famous_js_logo.png",
+            "Location": "715 E 26th Ave, Denver, CO 80205",
+            "website": "https://famousoriginaljs.com/",
+            "feature": "Authentic NY stlye",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Ian's Pizza",
+            "image": "./Images/ians_pizza_logo.png",
+            "website": "https://ianspizza.com/",
+            "feature": "It is next door",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Sexy Pizza",
+            "image": "./Images/sexy_pizza.jpeg",
+            "Location": "2460 Eliot St, Denver, CO 80211",
+            "website": "https://sexy.pizza/",
+            "feature": "Great personality",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Hops and Pie",
+            "image": "./Images/hops_and_pie.jpeg",
+            "Location": "3920 Tennyson St, Denver, CO 80212",
+            "website": "https://www.hopsandpie.com/",
+            "feature": "Sourdough pizza and great beer selection",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Rosalee's",
+            "image": "./Images/Rosalees_pizza.png",
+            "Location": "461 Main St, Longmont, CO 80501",
+            "website": "http://rosaleespizzeria.com/",
+            "feature": "Mushroom White Pie",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Blue Pan",
+            "image": "./Images/blue_pan.jpeg",
+            "Location": "3934 W 32nd Ave, Denver, CO 80212",
+            "website": "https://bluepandenver.com/",
+            "feature": "Detroit Stlye Pizza",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Redeemer",
+            "image": "./Images/redeemer.pizza.png",
+            "Location": "2705 Larimer St, Denver, CO 80205",
+            "website": "https://www.redeemerpizza.com/",
+            "feature": "Hip vibes",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Audrey Jane's Pizza Garage",
+            "image": "./Images/audrey_janes_pizza.png",
+            "Location": "2675 13th St, Boulder, CO 80304",
+            "website": "https://www.thepizzagarage.com/",
+            "feature": "Featured on Diners, Drive-Ins, and Dives",
+            "likes": "",
+            "comment": ""
+        },
+        {
+            "name": "Dominos",
+            "image": "./Images/dominos_pizza.png",
+            "Location": "Everywhere",
+            "website": "https://www.dominos.com/en/",
+            "feature": "Best for when you don't give a crap",
+            "likes": "",
+            "comment": ""
+        }
+    ]
 }
