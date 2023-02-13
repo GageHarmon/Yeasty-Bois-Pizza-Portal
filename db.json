@@ -43,11 +43,11 @@
     },
 
     {
-        "name" : "Grabowski's",
-        "image" : "https://images.app.goo.gl/MvVegrgQ2t1TFccM6",
-        "Location" : "3350 Brighton Blvd, Denver, CO 80216",
-        "website" : "https://www.grabowskispizzeria.com/",
-        "best-feature" : "Chicago 'cracker-stlye' pizza",
+        "name" : "Hops and Pie",
+        "image" : "https://images.app.goo.gl/aXcsXS3eaebsKzdU6",
+        "Location" : "3920 Tennyson St, Denver, CO 80212",
+        "website" : "https://www.hopsandpie.com/",
+        "best-feature" : "Sourdough pizza and great beer selection",
         "likes": "",
         "comment" : ""
     },
@@ -104,5 +104,4 @@
 
         ]
 }
-
-TEST
+       
