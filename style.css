@@ -1,4 +1,6 @@
-body {
+body 
+
+{
     text-align: center;
     padding: 25px;
     background-color: rgb(237, 222, 222);
@@ -65,6 +67,8 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+
 
 
 #pizza-nav {
@@ -139,6 +143,7 @@ input:checked+.slider:before {
 #card-body {
     border: solid black 3px;
     border-radius: 3em;
+    
 }
 
 #pizza-display img {

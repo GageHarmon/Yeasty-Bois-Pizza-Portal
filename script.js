@@ -98,7 +98,6 @@ function handleComment() {
 }
 
 
-
 ///// OPEN REVIEW BUTTON /////
 
 function openReviewBox() {
