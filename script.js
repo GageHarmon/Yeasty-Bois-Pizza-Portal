@@ -36,7 +36,7 @@ function createPizzaList(pizzaData) {
 
 function createImage(pizzaData) {
 
-    let selectedPizza = pizzaData;
+    selectedPizza = pizzaData;
 
     let image = document.querySelector("#pizza-image");
     let name = document.querySelector("#pizza-name");
@@ -68,7 +68,8 @@ toggleButton.addEventListener('click', function () {
 ///// LIKE BUTTON /////
 
 function handleLikes() {
-    let likeButton = document.querySelector('#like-count');
+    let likeCount = document.querySelector("#like-count");
+    let likeButton = document.querySelector('#like-button');
     likeButton.addEventListener('click', () => {
         if (selectedPizza.likes < 2000) {
             selectedPizza.likes++;
@@ -91,7 +92,7 @@ function handleLikes() {
 function handleComment() {
 
 let form = document.querySelector('#pizza-review-form');
-console.log(form);
+//console.log(form);
 
 
 form.addEventListener('submit', (event) => {
