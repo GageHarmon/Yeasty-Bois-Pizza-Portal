@@ -91,6 +91,7 @@ input:checked+.slider:before {
 }
 
 #pizza-display {
+    list-style: none;
     display: flex;
     justify-content: center;
 

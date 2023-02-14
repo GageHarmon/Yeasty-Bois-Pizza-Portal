@@ -9,8 +9,8 @@ fetch('http://localhost:3000/pizza')
         createImage(pizzaData[0]);
         createPizzaList(pizzaData);
         handleLikes();
-        // handleWebsite();
-        handleMouseOver();
+        //handleWebsite();
+        handleComment();
     })
 
 
@@ -25,18 +25,12 @@ function createPizzaList(pizzaData) {
         image.addEventListener("click", () => {
             createImage(item);
         })
-        image.addEventListener('mouseover', () => {
-            image.style.transform = 'scale(2.0)';
-        });
-        image.addEventListener('mouseout', () => {
-            image.style.transform = 'scale(1.0)';
-        });
     })
 }
 
 function createImage(pizzaData) {
 
-    selectedPizza = pizzaData;
+    let selectedPizza = pizzaData;
 
     let image = document.querySelector("#pizza-image");
     let name = document.querySelector("#pizza-name");
@@ -67,8 +61,7 @@ toggleButton.addEventListener('click', function () {
 ///// LIKE BUTTON /////
 
 function handleLikes() {
-    let likeButton = document.querySelector('#like-button');
-    let likeCount = document.querySelector('#like-count');
+    let likeButton = document.querySelector('#like-count');
     likeButton.addEventListener('click', () => {
         if (selectedPizza.likes < 2000) {
             selectedPizza.likes++;
@@ -85,17 +78,23 @@ function handleLikes() {
 //     websiteButton.addEventListener('click', () => {
 //         window.open(selectedPizza.website);
 //     })
-// }
+//}
+
+///// COMMENT BOX //////
+function handleComment() {
+
+let form = document.querySelector('#pizza-review-form');
+console.log(form);
 
 
-///// MOUSEOVER FUNCTIONS /////
-
-function handleMouseOver() {
-    let liImage = document.querySelector("li img");
-    liImage.addEventListener('mouseover', () => {
-        liImage.style.transform = 'scale(2.0)';
-    });
-    liImage.addEventListener('mouseout', () => {
-        liImage.style.transform = 'scale(1.0)';
-    });
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // prevent the form from submitting normally
+  let li = document.createElement('li');
+  let cardBody = document.querySelector('#card-body');
+  li.textContent = event.target['pizza-review-input'].value;
+  cardBody.appendChild(li);
+});
 }
+ 
+
+
