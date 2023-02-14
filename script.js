@@ -8,7 +8,8 @@ fetch('http://localhost:3000/pizza')
     .then(pizzaData => {
         createImage(pizzaData[0]);
         createPizzaList(pizzaData);
-        // handleLikes();
+        handleLikes();
+        handleWebsite();
     })
 
 
@@ -25,6 +26,7 @@ function createPizzaList(pizzaData) {
         })
     })
 }
+
 function createImage(pizzaData) {
 
     let selectedPizza = pizzaData;
@@ -33,11 +35,13 @@ function createImage(pizzaData) {
     let name = document.querySelector("#pizza-name");
     let likes = document.querySelector("#like-count");
     let bestFeature = document.querySelector(".best-feature");
+    let websiteUrl = document.querySelector("#website-url");
 
     image.src = selectedPizza.image;
     name.textContent = selectedPizza.name;
     likes.textContent = selectedPizza.likes;
     bestFeature.textContent = selectedPizza.feature;
+    websiteUrl.textContent = selectedPizza.website;
 }
 
 
@@ -46,7 +50,7 @@ function createImage(pizzaData) {
 ///// DARK MODE /////
 let toggleButton = document.querySelector("#checkbox");
 
-toggleButton.addEventListener("click", function () {
+toggleButton.addEventListener('click', function () {
     document.body.classList.toggle("dark-mode");
 });
 ///// END DARK MODE /////
@@ -55,14 +59,22 @@ toggleButton.addEventListener("click", function () {
 
 ///// LIKE BUTTON /////
 
-function handleLike() {
-    let likeButton = document.querySelector('#like-button');
-    likeButton.addEventListener('click', () => {
+function handleLikes() {
+    let likeCount = document.querySelector('#like-count');
+    likeCount.addEventListener('click', () => {
         if (selectedPizza.likes < 2000) {
             selectedPizza.likes++;
-            likeButton.textContent = pizza.likes;
+            likeCount.textContent = selectedPizza.likes;
         }
     })
 }
+///// END LIKE BUTTON /////
 
 
+///// WEBSITE BUTTON /////
+function handleWebsite() {
+    let websiteButton = document.querySelector('#website-button');
+    websiteButton.addEventListener('click', () => {
+        window.open(selectedPizza.website);
+    })
+}
