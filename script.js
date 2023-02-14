@@ -19,14 +19,14 @@ function createPizzaList(pizzaData) {
         let li = document.createElement("li");
         let image = document.createElement("img");
         li.textContent = item.name;
-        image.src = item.image;
+        image.src = './images/Pepperoni.jpeg';
         pizzaList.appendChild(li);
         li.appendChild(image);
         image.addEventListener("click", () => {
             createImage(item);
         })
         image.addEventListener('mouseover', () => {
-            image.style.transform = 'scale(2.0)';
+            image.style.transform = 'scale(1.5)';
         });
         image.addEventListener('mouseout', () => {
             image.style.transform = 'scale(1.0)';
@@ -55,6 +55,7 @@ function createImage(pizzaData) {
 
 
 ///// DARK MODE /////
+
 let toggleButton = document.querySelector("#checkbox");
 
 toggleButton.addEventListener('click', function () {
@@ -99,3 +100,4 @@ function handleMouseOver() {
         liImage.style.transform = 'scale(1.0)';
     });
 }
+///// END MOUSEOVER FUNCTIONS /////
