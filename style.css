@@ -68,6 +68,8 @@ input:checked+.slider:before {
 
 
 #pizza-nav {
+    cursor: pointer;
+    position: relative;
     list-style: none;
     padding: 10px;
     font-size: 10px;
@@ -77,6 +79,32 @@ input:checked+.slider:before {
     overflow: auto;
     width: 100%;
     height: 200px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #FF4500;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #pizza-nav img {
@@ -97,6 +125,7 @@ input:checked+.slider:before {
 }
 
 #pizza-display {
+    margin: auto;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -114,16 +143,34 @@ input:checked+.slider:before {
 
 #pizza-display img {
     height: 30vh;
+
 }
 
 
 #like-button {
-    background: rgb(234, 3, 41);
+    background-image: url('./images/YummyPizza.jpg');
+    background-color: #cccccc;
     border: solid black 1px;
     border-radius: 0.5em;
     margin-top: 1em;
     padding: 0.75em;
     font-weight: bold;
+}
+
+#review-box {
+    position: relative;
+    height: 500px;
+    width: 300px;
+    cursor: pointer;
+    border: solid black 1px;
+    border-radius: 0.5em;
+}
+
+#submit {
+    color: white;
+    background-color: black;
+    border: solid black 1px;
+    border-radius: 25%;
 }
 
 /* .container {
@@ -201,6 +248,8 @@ input:checked+.slider:before {
     font-family: 'Get Schwifty';
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
 }
+
+
 
 form {
     margin: 2em;

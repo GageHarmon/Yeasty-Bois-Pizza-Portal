@@ -27,28 +27,29 @@
             <p class="best-feature"></p>
             <br>
             <a id="website-url" href="#"></a>
-            <ul id="comment-list"></ul>
-            <!-- this is for user comments to be populated in another place yet to be determined -->
             <br>
-            <!-- <p class="best-feature">Pizza on a couch! Just look at it!</p> -->
-            <button id="like-button">
-                <span id="like-count">0</span>
-                <span class="heart">♥</span>
+            <p id="comments"></p>
+            <button id="like-button"><ion-icon name="pizza-outline"></ion-icon>
+                <span id="like-count"></span>
+                <ion-icon name="pizza-outline"></ion-icon>
             </button>
         </div>
     </div>
-    <!-- <div class="container">
-        <div class="animate-spin">
-    </div> -->
+    <button id="open-review-button">Leave a review!</button>
+    <div id="review-box" style='display: none;'>
+        <form>
+            <label for='pizza-review-form'></label>
+            <input type="type" name="pizza-review-input">
+            <button id="submit"><span>Submit</span></button>
+        </form>
+        <ul id="comment-list">
+        </ul>
+    </div>
     <div class="title">Yeasty Bois</div>
     <div class="title middle">Yeasty Bois</div>
     <div class="title bottom">Yeasty Bois</div>
-    </div>
-    <form id="pizza-review-form">
-        <label for="pizza-review-input">Leave a review!</label>
-        <input type="text" name="pizza-review-input">
-        <button type="submit">Submit</button>
-    </form>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
