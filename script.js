@@ -1,6 +1,10 @@
 let selectedPizza;
 let pizzaList = document.querySelector("#pizza-nav");
 let pizzaImage = document.querySelector("#pizza-image");
+let reviewButton = document.getElementById('open-review-button');
+let reviewBox = document.getElementById('review-box');
+let form = document.querySelector('#pizza-review-form');
+let cardList = document.querySelector('#comment-list');
 
 
 fetch('http://localhost:3000/pizza')
@@ -8,8 +12,8 @@ fetch('http://localhost:3000/pizza')
     .then(pizzaData => {
         createImage(pizzaData[0]);
         createPizzaList(pizzaData);
+        openReviewBox();
         handleLikes();
-        //handleWebsite();
         handleComment();
     })
 
@@ -33,6 +37,7 @@ function createPizzaList(pizzaData) {
         });
     })
 }
+
 
 function createImage(pizzaData) {
 
@@ -80,27 +85,26 @@ function handleLikes() {
 ///// END LIKE BUTTON /////
 
 
-///// WEBSITE BUTTON /////
-// function handleWebsite() {
-//     let websiteButton = document.querySelector('#website-button');
-//     websiteButton.addEventListener('click', () => {
-//         window.open(selectedPizza.website);
-//     })
-//}
-
-///// COMMENT BOX //////
+/// COMMENT BOX //////
 function handleComment() {
+    let form = document.querySelector('form');
+    let commentList = document.querySelector('#comment-list');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // prevent the form from submitting normally
+        let li = document.createElement('li');
+        li.textContent = event.target['pizza-review-input'].value;
+        commentList.appendChild(li);
+    });
+}
 
-let form = document.querySelector('#pizza-review-form');
-//console.log(form);
 
+///// OPEN REVIEW BUTTON /////
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // prevent the form from submitting normally
-  let li = document.createElement('li');
-  let cardBody = document.querySelector('#card-body');
-  li.textContent = event.target['pizza-review-input'].value;
-  cardBody.appendChild(li);
-});
+function openReviewBox() {
+    let reviewButton = document.getElementById('open-review-button');
+    let reviewBox = document.getElementById('review-box');
+    reviewButton.addEventListener('click', () => {
+        reviewBox.style.display = 'block';
+    });
 }
 
