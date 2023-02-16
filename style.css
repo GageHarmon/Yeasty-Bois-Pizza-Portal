@@ -147,18 +147,6 @@ input:checked+.slider:before {
     height: 30vh;
 }
 
-#pizza-feature {
-    box-shadow: 0px 0px 5px 5px #f45505;
-    font-family: 'Get Schwifty';
-    color: rgb(255, 140, 0);
-    font-size: 18px;
-    height: 5vh;
-    width: fit-content;
-    padding: 5px;
-    border-radius: 25%;
-    margin: auto;
-    line-height: 5vh;
-}
 
 #pizza-name {
     text-shadow: rgb(0, 0, 0) 0px 0px 10px;
@@ -166,6 +154,19 @@ input:checked+.slider:before {
     font-size: 40px;
     align-items: center;
     color: rgb(255, 140, 0);
+}
+
+#pizza-feature-box {
+    box-shadow: 0px 0px 5px 5px #f45505;
+    font-family: 'Get Schwifty';
+    color: rgb(255, 140, 0);
+    font-size: 18px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 25%;
+    margin: auto;
+    line-height: 5vh;
 }
 
 

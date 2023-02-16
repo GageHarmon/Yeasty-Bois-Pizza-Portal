@@ -45,10 +45,16 @@ function updateDisplayedPizza(pizzaData) {
     let pizzaDisplayImage = document.querySelector("#pizza-image")
     let pizzaDisplayName = document.querySelector("#pizza-name");
     let pizzaDisplayFeature = document.querySelector("#pizza-feature")
+    let pizzaDisplayWebsite = document.querySelector("#pizza-website");
+    let pizzaWebsiteLink = document.createElement("a");
 
     pizzaDisplayImage.src = selectedPizza.image;
     pizzaDisplayName.textContent = selectedPizza.name;
-    pizzaDisplayFeature.textContent = `Known for ${selectedPizza.feature}`;
+    pizzaDisplayFeature.textContent = `Known for ${selectedPizza.feature}`
+    pizzaWebsiteLink.href = selectedPizza.website;
+    pizzaWebsiteLink.textContent = selectedPizza.website;
+    pizzaDisplayWebsite.textContent = "";
+    pizzaDisplayWebsite.appendChild(pizzaWebsiteLink);
 }
 
 
