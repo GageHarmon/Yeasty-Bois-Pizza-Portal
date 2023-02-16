@@ -25,30 +25,40 @@
         <button id="next-pizza">Next</button> -->
     </div>
     <br>
-    <h2 id="pizza-name" class="animate-pulse"></h2>
-    <div id="pizza-slideshow">
-        <div id="portal" class="animate-spin"></div>
-        <img id="pizza-image" class="swirl-in-top-bck" src="" alt="Pizza image">
-    </div>
-    <p id="pizza-feature"></p>
-    <button id="like-button">
-        <span id="like-count"></span>
-        <ion-icon name="pizza-outline"></ion-icon>
-    </button>
-    <button id="open-review-button"><span>Leave a review!</span></button>
-    <div class="review-container">
+    <div id="god-container">
+        <h2 id="pizza-name" class="animate-pulse"></h2>
+        <div id="pizza-slideshow">
+            <div id="portal" class="animate-spin"></div>
+            <img id="pizza-image" src="#" class="swirl-in-top-bck" src="" alt="Pizza image">
+        </div>
         <div id="review-box" style='display: none;'>
-            <form>
-                <label for='pizza-review-form'></label>
-                <input type="type" name="pizza-review-input">
+            <form id="new-pizza-form">
+                <label for='pizza-name-input'>Pizza Name</label>
+                <input type="text" name="pizza-name-input">
+                <label for='pizza-image-form'>Logo</label>
+                <input type="text" name="pizza-image-input">
+                <label for='pizza-feature-form'>Favorite part!</label>
+                <input type="text" name="pizza-feature-input">
+                <br>
                 <button id="submit"><span>Submit</span></button>
             </form>
-            <ul id="comment-list">
-            </ul>
+            <!-- <ul id="comment-list">
+            </ul> -->
         </div>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div id="pizza-feature-box">
+            <p id="pizza-feature"></p>
+        </div>
+        <div class="review-container">
+        </div>
+        <!-- </div> -->
+        <!-- <button id="like-button">
+        <span id="like-count"></span>
+        <ion-icon name="pizza-outline"></ion-icon>
+    </button> -->
+        <br>
+        <button id="open-submit-button"><span>Missing your favorite spot?</span></button>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
