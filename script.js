@@ -60,6 +60,7 @@ let toggleButton = document.querySelector("#checkbox");
 toggleButton.addEventListener('click', function () {
     document.body.classList.toggle("dark-mode");
 });
+
 ///// END DARK MODE /////
 
 
