@@ -161,7 +161,7 @@ input:checked+.slider:before {
 }
 
 #pizza-name {
-    text-shadow: rgb(0, 0, 0) 5px 5px 25px;
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
     font-family: 'Get Schwifty';
     font-size: 40px;
     align-items: center;
@@ -190,6 +190,7 @@ input:checked+.slider:before {
     border-radius: 25%;
 }
 
+
 label {
     color: rgb(255, 140, 0)
 }
@@ -201,6 +202,19 @@ form {
 form label {
     display: block;
 }
+
+#name-input {
+    color: rgb(0, 0, 0);
+}
+
+#image-input {
+    color: rgb(0, 0, 0);
+}
+
+#feature-input {
+    color: rgb(0, 0, 0);
+}
+
 
 
 /* ANIMATIONS */
