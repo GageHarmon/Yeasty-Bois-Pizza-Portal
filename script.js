@@ -28,13 +28,13 @@ function createSlideShow(pizzaData) {
         pizzaImage.addEventListener('click', () => {
             updateDisplayedPizza(item);
         });
-        // pizzaImage.addEventListener('mouseover', () => {
-        //     pizzaImage.style.transform = 'scale(1.5)';
-        // });
+        pizzaImage.addEventListener('mouseover', () => {
+            pizzaImage.style.transform = 'scale(1.5)';
+        });
 
-        // pizzaImage.addEventListener('mouseout', () => {
-        //     pizzaImage.style.transform = 'scale(1.0)';
-        // });
+        pizzaImage.addEventListener('mouseout', () => {
+            pizzaImage.style.transform = 'scale(1.0)';
+        });
     });
     updateDisplayedPizza(pizzaData[0]);
 };
