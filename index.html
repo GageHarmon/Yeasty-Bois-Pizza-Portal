@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <div id="title-box" class="animate-pulse">
+        <div class="title">Yeasty Bois Pizza Portal</div>
+        <div class="title middle">Yeasty Bois Pizza Portal</div>
+        <div class="title bottom">Yeasty Bois Pizza Portal</div>
+    </div>
     <div class="switch">
         <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
@@ -16,38 +21,32 @@
         </label>
     </div>
     <div id="pizza-nav">
+        <!-- <button id="prev-pizza">Prev</button>
+        <button id="next-pizza">Next</button> -->
     </div>
-    <div id="pizza-display">
-        <div id="portal" class="animate-spin"></div> 
-        <div id="card-body">
-            <h2 id="pizza-name"></h2>
-                <br>
-                <img id="pizza-image" src="#" alt="name of image">
-                <br>
-                <p class="best-feature"></p>
-                <br>
-            <a id="website-url" href="#"></a>
-            <br>
-            <p id="comments"></p>
-            <button id="like-button"><ion-icon name="pizza-outline"></ion-icon>
-                <span id="like-count"></span>
-                <ion-icon name="pizza-outline"></ion-icon>
-            </button>
+    <br>
+    <h2 id="pizza-name" class="animate-pulse"></h2>
+    <div id="pizza-slideshow">
+        <div id="portal" class="animate-spin"></div>
+        <img id="pizza-image" class="swirl-in-top-bck" src="" alt="Pizza image">
+    </div>
+    <p id="pizza-feature"></p>
+    <button id="like-button">
+        <span id="like-count"></span>
+        <ion-icon name="pizza-outline"></ion-icon>
+    </button>
+    <button id="open-review-button"><span>Leave a review!</span></button>
+    <div class="review-container">
+        <div id="review-box" style='display: none;'>
+            <form>
+                <label for='pizza-review-form'></label>
+                <input type="type" name="pizza-review-input">
+                <button id="submit"><span>Submit</span></button>
+            </form>
+            <ul id="comment-list">
+            </ul>
         </div>
     </div>
-    <button id="open-review-button">Leave a review!</button>
-    <div id="review-box" style='display: none;'>
-        <form>
-            <label for='pizza-review-form'></label>
-            <input type="type" name="pizza-review-input">
-            <button id="submit"><span>Submit</span></button>
-        </form>
-        <ul id="comment-list">
-        </ul>
-    </div>
-    <div class="title">Yeasty Bois</div>
-    <div class="title middle">Yeasty Bois</div>
-    <div class="title bottom">Yeasty Bois</div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

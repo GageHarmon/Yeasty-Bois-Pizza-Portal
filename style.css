@@ -1,10 +1,7 @@
-body 
-
-{
+body {
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     background-color: rgb(237, 222, 222);
-    font-size: 0.9vw;
 }
 
 body.dark-mode {
@@ -12,6 +9,7 @@ body.dark-mode {
     color: white;
 }
 
+/* DARK MODE TOGGLE SWITCH */
 .switch {
     height: 50px;
     position: absolute;
@@ -68,8 +66,41 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
+/* YEASTY BOIS TITLE */
+
+#title-box {
+    height: 100px;
+    width: auto;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    position: absolute;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Get Schwifty';
+    font-size: 3em;
+    color: #FF4500;
+    z-index: 50;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.title.middle {
+    -webkit-text-stroke: 0.1em #FFD700;
+    z-index: 49;
+}
+
+.title.bottom {
+    -webkit-text-stroke: 0.4em black;
+    z-index: 48;
+}
 
 
+/* PIZZA SLIDER & DISPLAY */
 
 #pizza-nav {
     cursor: pointer;
@@ -80,11 +111,110 @@ input:checked+.slider:before {
     display: flex;
     justify-content: space-between;
     flex: auto;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: visible;
     width: 100%;
-    height: 200px;
+    height: 300px;
 }
 
+#pizza-nav img {
+    box-shadow: 0px 0px 20px 5px #8B0000;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+
+#pizza-slideshow {
+    width: 39em;
+    height: 40em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* #card-body {
+    justify-content: center;
+    position: absolute;
+} */
+
+#pizza-slideshow img {
+    box-shadow: 0px 0px 25px 30px #8B0000;
+    border-radius: 50%;
+    height: 30vh;
+}
+
+#pizza-feature {
+    box-shadow: 0px 0px 25px 30px #8B0000;
+    height: 5vh;
+    width: 30vh;
+    align-items: center;
+    border-radius: 25%;
+}
+
+#pizza-name {
+    text-shadow: rgb(0, 0, 0) 5px 5px 25px;
+    font-family: 'Get Schwifty';
+    font-size: 40px;
+    align-items: center;
+    color: yellow;
+}
+
+
+.swirl-in-top-bck {
+    -webkit-animation: swirl-in-top-bck 0.65s ease-out both;
+    animation: swirl-in-top-bck 0.65s ease-out both;
+}
+
+@-webkit-keyframes swirl-in-top-bck {
+    0% {
+        -webkit-transform: rotate(540deg) scale(5);
+        transform: rotate(540deg) scale(5);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        opacity: 1;
+    }
+}
+
+@keyframes swirl-in-top-bck {
+    0% {
+        -webkit-transform: rotate(540deg) scale(5);
+        transform: rotate(540deg) scale(5);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        opacity: 1;
+    }
+}
+
+
+
+/* #pizza-slideshow :first-child {
+    align-items: center;
+} */
+
+
+
+/*Nav Buttons*/
 .prev,
 .next {
     cursor: pointer;
@@ -111,47 +241,6 @@ input:checked+.slider:before {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#pizza-nav img {
-    display: flex;
-    flex: auto;
-    width: 125px;
-    border: solid black 1px;
-    margin: 0.3em;
-    border-radius: 50%;
-}
-
-#pizza-nav li {
-    font-size: 16px;
-}
-
-#pizza-image {
-    opacity: 10;
-}
-
-#pizza-display {
-    margin: auto;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-
-}
-
-#pizza-display img {
-    border-radius: 50%;
-}
-
-#card-body {
-    border: solid black 3px;
-    border-radius: 3em;
-    
-}
-
-#pizza-display img {
-    height: 30vh;
-
-}
-
-
 #like-button {
     background-image: url('./images/YummyPizza.jpg');
     background-color: #cccccc;
@@ -162,13 +251,27 @@ input:checked+.slider:before {
     font-weight: bold;
 }
 
+.review-container {
+    justify-content: center;
+    height: 530px;
+    width: 200px;
+}
+
 #review-box {
-    position: relative;
+    z-index: -1;
+    position: absolute;
     height: 500px;
     width: 300px;
     cursor: pointer;
+    border: solid black 3px;
+    border-radius: 3em;
+}
+
+#open-review-button {
+    color: white;
+    background-color: black;
     border: solid black 1px;
-    border-radius: 0.5em;
+    border-radius: 25%;
 }
 
 #submit {
@@ -178,41 +281,16 @@ input:checked+.slider:before {
     border-radius: 25%;
 }
 
-/* .container {
-    height: 100vh;
-    display: grid;
-} */
 
 
-.title {
-    position: absolute;
-    padding-top: 75px;
-    text-align: center;
-    font-family: 'Get Schwifty';
-    font-size: 5em;
-    color: #FF4500;
-    z-index: 50;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
-
-}
-
-.title.middle {
-    -webkit-text-stroke: 0.1em #FFD700;
-    z-index: 49;
-}
-
-.title.bottom {
-    -webkit-text-stroke: 0.4em black;
-    z-index: 48;
-}
-
+/*PORTAL STUFF*/
 #portal {
     z-index: -1;
     position: absolute;
     background-color: #66BA4F;
     box-shadow: 0px 0px 40px 10px #8B0000;
-    height: 45em;
-    width: 45em;
+    height: 35em;
+    width: 35em;
     border-radius: 50%;
     margin: auto;
     background:
