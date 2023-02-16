@@ -153,7 +153,8 @@ input:checked+.slider:before {
     color: rgb(255, 140, 0);
     font-size: 18px;
     height: 5vh;
-    width: 30vh;
+    width: fit-content;
+    padding: 5px;
     border-radius: 25%;
     margin: auto;
     line-height: 5vh;
@@ -175,25 +176,30 @@ input:checked+.slider:before {
     width: 300px;
     cursor: pointer;
     border-radius: 25%;
+    bottom: 5%;
 }
 
 #open-submit-button {
-    color: white;
-    background-color: black;
-    border: solid black 1px;
+    color: rgb(255, 140, 0);
     border-radius: 25%;
 }
 
 #submit {
     margin-top: 10px;
-    color: white;
-    background-color: black;
-    border: solid black 1px;
+    color: rgb(255, 140, 0);
     border-radius: 25%;
 }
 
 label {
     color: rgb(255, 140, 0)
+}
+
+form {
+    margin: 2em;
+}
+
+form label {
+    display: block;
 }
 
 
@@ -290,14 +296,4 @@ label {
 @font-face {
     font-family: 'Get Schwifty';
     src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
-}
-
-
-
-form {
-    margin: 2em;
-}
-
-form label {
-    display: block;
 }
