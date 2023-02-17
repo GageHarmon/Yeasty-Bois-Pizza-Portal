@@ -58,7 +58,6 @@ function updateDisplayedPizza(pizzaData) {
 }
 
 
-
 ///// DARK MODE /////
 
 let toggleButton = document.querySelector("#checkbox");
