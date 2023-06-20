@@ -1,36 +1,66 @@
-## Table of Contents
+# Yeasty Bois
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
+Welcome to the Yeasty Bois Pizza Ranking App! This collaborative project is built entirely in JavaScript and utilizes a local JSON database. You can use this application to add your own pizza restaurant, leave comments, and like your favorite pizza places.
 
+## Technologies Used
+- JavaScript
+- Tailwind CSS
+- Animista
+- CodePen
+- Custom CSS
 
-# Yeasty-Bois
+## Getting Started
 
-The goal of the yeasty-bois is to provide the user with the best pizza options in the area. 
+To run the application and start the server with the local JSON database, follow these steps:
 
-# What the Yeasty-Bois site does
-
-This site has a carefully curated list of pizza places by the builders of this site. The thing, we can't try all the pizza places so that's where you come in! 
-
-## Installation
-
-You just need to be able to access the world wide web. 
+1. Clone the repository to your local machine:
 
 
-## Usage
+2. Navigate to the project directory:
 
-To view the different pizza places click through the logos at the top of the page and it will display the the best feature of said pizza place and website link.
 
+3. Install the required dependencies:
+ 
+ npm install
+
+
+4. Start the JSON server with the `db.json` file:
+
+run: json-server --watch db.json
+open live server by right clicking on index.html and clicking "open with live server"
+
+
+## Features
+
+1. **Add a Pizza Restaurant:** You can add your own pizza restaurant to the application by providing relevant details such as the restaurant name, location, and a description.
+
+2. **Leave Comments:** Users can leave comments on any pizza restaurant listed in the application. Share your thoughts, experiences, or recommendations with other pizza enthusiasts.
+
+3. **Like Restaurants:** Show your appreciation for your favorite pizza places by liking them. The like feature helps identify the most popular restaurants among users.
 
 ## Contributing
 
-Do you have a pizza place that you think is worthy to be in this list? Then click the 'Missing your favorite spot?' button and fill in the form and submit!
+This project is open to contributions from the community. If you'd like to contribute, please follow these guidelines:
 
-## Acknowledgments 
+1. Fork the repository and clone it to your local machine.
+2. Create a new branch for your feature or bug fix:
+3. Implement your changes and commit them:
+4. Push to your forked repository:
 
-Animista, Code Pen and tailwind for CSS. MDN and W3 Schools for general knowledge. 
+5. Open a pull request, describing your changes and their purpose.
 
+We appreciate your help in improving the Yeasty Bois Pizza Ranking App!
 
+## License
 
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+
+## Acknowledgements
+
+We would like to acknowledge the following resources and tools that helped in the development of this project:
+
+- [Animista](https://animista.net/): A great resource for CSS animations.
+- [CodePen](https://codepen.io/): An online code editor and community for front-end development.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework that greatly simplifies building user interfaces.
+
+Please note that the Pizza Ranking Application is purely for demonstration purposes and does not represent real pizza restaurant rankings or recommendations.
